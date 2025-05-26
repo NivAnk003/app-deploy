@@ -8,6 +8,8 @@ phases:
   post_build:
     commands:
       - echo Configuring NGINX
+      - echo "Contents of output:"
+      - ls -l output/
 artifacts:
   files:
     - output/index.html
