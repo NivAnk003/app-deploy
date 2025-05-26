@@ -2,14 +2,14 @@ version: 0.2
 
 phases:
     build:
-    commands:
-      - echo Build started on `date`
-      - cp index.html /var/www/html/
-  post_build:
-    commands:
-      - echo Configuring NGINX
-      - echo "Contents of output:"
-      - ls -l output/
+        commands:
+          - echo Build started on `date`
+          - cp index.html /var/www/html/
+    post_build:
+        commands:
+          - echo Configuring NGINX
+          - echo "Contents of output:"
+          - ls -l output/
 artifacts:
   files:
     - output/index.html
